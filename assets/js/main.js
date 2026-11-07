@@ -63,3 +63,26 @@
   }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('main section').forEach(function (s) { obs.observe(s); });
 })();
+
+// ---- Light / dark mode ----
+(function () {
+  var html = document.documentElement, btn = document.getElementById('theme-btn');
+  btn.addEventListener('click', function () {
+    var dark = html.classList.toggle('dark');
+    try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+  });
+})();
+
+// ---- Top bar: highlight current panel / tab ----
+(function () {
+  var steps = Array.prototype.slice.call(document.querySelectorAll('.step-link'));
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab-link'));
+  function sync() {
+    var active = document.querySelector('.side-nav a.active');
+    var id = active ? active.getAttribute('href').slice(1) : 'home';
+    steps.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + id); });
+    tabs.forEach(function (a) { a.classList.toggle('active', a.getAttribute('data-tab') === (id === 'contact' ? 'contact' : 'home') && (id === 'contact' || id === 'home')); });
+  }
+  window.addEventListener('scroll', function () { requestAnimationFrame(sync); }, { passive: true });
+  sync();
+})();
