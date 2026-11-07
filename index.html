@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en" class="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amadou Diallo — Academic Profile</title>
+  <meta name="description" content="Academic profile of Amadou Diallo — Ph.D. candidate at CELIA, University of Bordeaux. Nonlinear fiber optics, ultrafast pulses, DUV/VUV generation, high-performance computing.">
+  <meta name="author" content="Amadou Diallo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.remove('light');
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="progress-bar" id="progress"></div>
+
+  <header id="header">
+    <div class="topbar">
+      <a class="brand" href="#top">
+        <div class="avatar">AD</div>
+        <span class="brand-name">Amadou Diallo</span>
+      </a>
+      <nav aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#talks">Talks</a>
+        <a href="#awards">Awards</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-btn" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="wrap" id="top">
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section">About</h2>
+      <div class="rule"></div>
+      <div class="card">
+        <p>Ph.D. researcher in Lasers, Matter and Nanosciences at CELIA (Bordeaux), working on the modelling of nonlinear propagation of ultrashort intense pulses in gas-filled hollow-core fibers. I develop HPC-optimized simulation codes (UPPE and Maxwell–Schrödinger) for CPU and GPU, with a background in applied mathematics and high-performance computing.</p>
+      </div>
+    </section>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <span class="pill">Ph.D. candidate · CELIA, University of Bordeaux</span>
+        <h1 class="title">Modelling of Nonlinear Propagation in Hollow-Core Fibers and Applications</h1>
+        <p class="subtitle">I develop high-performance computing codes in C++ (with the Kokkos APIs) and Python to model ultrashort pulse propagation, from an ad hoc Maxwell-based UPPE model to an ab initio approach coupled with the 1D time-dependent Schrödinger equation (1D-TDSE).</p>
+        <div class="cta">
+          <a class="btn acc" href="assets/cv/Amadou_Diallo_CV.pdf" target="_blank" rel="noopener"><span>📄</span> Download CV (PDF)</a>
+          <a class="btn" href="#contact"><span>💬</span> Get in touch</a>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="badges">
+          <span class="badge">Nonlinear Optics</span>
+          <span class="badge">Ultrafast Lasers</span>
+          <span class="badge">DUV/VUV</span>
+          <span class="badge">C/C++</span>
+          <span class="badge">Kokkos APIs</span>
+          <span class="badge">MPI · OpenMP · CUDA</span>
+          <span class="badge">Python</span>
+          <span class="badge">MATLAB</span>
+          <span class="badge">AI/ML</span>
+        </div>
+        <div class="two">
+          <div>
+            <strong>🏛️ Affiliations</strong>
+            <ul class="clean">
+              <li>University of Bordeaux — CELIA (France)</li>
+              <li>Lawrence Berkeley National Lab (USA), former</li>
+            </ul>
+          </div>
+          <div>
+            <strong>🔬 Focus Areas</strong>
+            <ul class="clean">
+              <li>Hollow-core fibers</li>
+              <li>Scientific computing</li>
+              <li>AI/ML for physics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2 class="section">Research Experience</h2>
+      <div class="rule"></div>
+      <div class="timeline">
+        <div class="t-item">
+          <h3>Ph.D. Researcher — CELIA, University of Bordeaux (France) <span class="meta">Mar 2023 — Present</span></h3>
+          <ul class="clean">
+            <li><strong>Nonlinear pulse propagation code:</strong> Developed a UPPE-based simulation code in Python with fiber-mode decomposition and the split-step Fourier method, including Kerr, Raman and ionization effects.</li>
+            <li><strong>Hybrid HPC code:</strong> Designed a parallel C++ code with Kokkos (CPU/GPU portability) coupling Maxwell and Schrödinger equations.</li>
+            <li><strong>Supercomputers:</strong> Hands-on experience with Jean Zay (IDRIS), Irene (TGCC), Adastra (CINES), Curta (MCIA), Caliv3 (MCIA) and Theremin (CELIA).</li>
+          </ul>
+        </div>
+        <div class="t-item">
+          <h3>Research Intern — Lawrence Berkeley National Laboratory (USA) <span class="meta">Mar 2022 — Sep 2022</span></h3>
+          <ul class="clean">
+            <li><strong>PML boundaries in WarpX:</strong> Research, development and implementation of the PML absorbing boundary condition in the electromagnetic particle-in-cell code WarpX (Exascale Computing Project), ATAP division.</li>
+            <li><strong>Supercomputers:</strong> Perlmutter and Cori (NERSC).</li>
+          </ul>
+        </div>
+        <div class="t-item">
+          <h3>M2 Modelling &amp; Simulation with HPC — ENS Paris-Saclay <span class="meta">Sep 2021 — Sep 2022</span></h3>
+          <ul class="clean">
+            <li><strong>Parallel computing:</strong> Modelling and simulation with CUDA, OpenMP and MPI; performance evaluation (scalability, speed-up, efficiency).</li>
+          </ul>
+        </div>
+        <div class="t-item">
+          <h3>Research Intern — CMAP, École Polytechnique <span class="meta">Apr 2020 — Sep 2020</span></h3>
+          <ul class="clean">
+            <li><strong>Virtual Element Method:</strong> Development and cluster implementation of the VEM method, and extension to the Hybrid High-Order (HHO) method.</li>
+          </ul>
+        </div>
+        <div class="t-item">
+          <h3>Master Modelling &amp; Scientific Computing — Cadi Ayyad University, Marrakesh <span class="meta">2017 — 2019</span></h3>
+          <ul class="clean">
+            <li><strong>Master thesis:</strong> Flame propagation in an adiabatic engine system.</li>
+            <li><strong>Numerical methods:</strong> GMRES, direct and iterative solvers, finite elements, finite volumes, multiscale methods.</li>
+          </ul>
+        </div>
+        <div class="t-item">
+          <h3>Licence Applied Mathematics &amp; Computer Science — Cadi Ayyad University <span class="meta">2014 — 2017</span></h3>
+          <ul class="clean">
+            <li><strong>Research internship:</strong> Around Brownian motion, with Prof. Vidyadhar Mandrekar (Michigan State University).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2 class="section">Publications &amp; Preprints</h2>
+      <div class="rule"></div>
+      <div id="pubs"></div>
+    </section>
+
+    <!-- TALKS -->
+    <section id="talks">
+      <h2 class="section">Talks &amp; Conferences</h2>
+      <div class="rule"></div>
+      <div class="cards" id="talks-container"></div>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards">
+      <h2 class="section">Awards &amp; Activities</h2>
+      <div class="rule"></div>
+      <div class="cards">
+        <div class="card">
+          <h3>🏆 Awards and Honors</h3>
+          <ul class="clean">
+            <li>Ph.D. fellowship, Graduate Research Program GPR LIGHT, University of Bordeaux (2023–2026).</li>
+            <li>Research internship at Lawrence Berkeley National Laboratory (2022).</li>
+            <li>Contributor to WarpX, open-source exascale particle-in-cell code.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🌟 Extracurricular Activities</h3>
+          <ul class="clean">
+            <li>Member of the organizing committee, JCAD 2024 (Bordeaux).</li>
+            <li>Tutor in mathematics, physics and chemistry for high-school students, Completude, Paris (2020–2022).</li>
+            <li>Volunteer computer trainer, Association AUTREMONDE, Kayes, Mali (2012–2014).</li>
+            <li>Interests: sports, travelling, reading.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="section">Technical Skills</h2>
+      <div class="rule"></div>
+      <div class="two">
+        <div class="card">
+          <h3>💻 Programming</h3>
+          <div class="chip">C/C++ (OOP)</div><div class="chip">Python</div><div class="chip">MATLAB/Simulink</div><div class="chip">Fortran</div><div class="chip">Bash</div><div class="chip">Git/GitLab</div><div class="chip">LaTeX</div>
+        </div>
+        <div class="card">
+          <h3>⚡ HPC &amp; Parallel Computing</h3>
+          <p class="meta" style="margin:4px 0 2px">Parallel computing</p>
+          <div class="chip">MPI</div><div class="chip">OpenMP</div><div class="chip">CUDA</div><div class="chip">OpenCL</div><div class="chip">OpenACC</div><div class="chip">Kokkos</div>
+          <p class="meta" style="margin:12px 0 2px">Clusters used</p>
+          <div class="chip">Jean Zay (IDRIS)</div><div class="chip">Irene (TGCC)</div><div class="chip">Adastra (CINES)</div><div class="chip">Perlmutter (NERSC)</div><div class="chip">Cori (NERSC)</div><div class="chip">Curta (MCIA)</div><div class="chip">Caliv3 (MCIA)</div><div class="chip">Theremin (CELIA)</div>
+        </div>
+      </div>
+      <div class="two" style="margin-top:20px">
+        <div class="card">
+          <h3>📊 Data &amp; Simulation</h3>
+          <div class="chip">numpy · scipy · pandas</div><div class="chip">matplotlib · gnuplot</div><div class="chip">sympy</div><div class="chip">Finite elements / volumes</div><div class="chip">Linux · macOS · Windows</div>
+        </div>
+        <div class="card">
+          <h3>🗣️ Languages &amp; Communication</h3>
+          <div class="chip">French (fluent)</div><div class="chip">English (professional)</div><div class="chip">German (intermediate)</div><div class="chip">Scientific writing</div><div class="chip">Talks &amp; Posters</div><div class="chip">Teaching</div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:20px">
+        <h3>🤖 AI / Machine Learning</h3>
+        <div class="chip">Machine learning</div><div class="chip">Neural networks</div><div class="chip">Scientific machine learning</div><div class="chip">Neural surrogate models for physics solvers</div><div class="chip">Training on simulation data</div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="section">Contact &amp; Profiles</h2>
+      <div class="rule"></div>
+      <div class="cards contact">
+        <div class="card"><h3>📧 Email</h3><a href="mailto:amadou.diallo@u-bordeaux.fr">amadou.diallo@u-bordeaux.fr</a></div>
+        <div class="card"><h3>💼 LinkedIn</h3><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/amadou-diallo-811191101/">linkedin.com/in/amadou-diallo</a></div>
+        <div class="card"><h3>🐙 GitHub</h3><a target="_blank" rel="noopener" href="https://github.com/amadou38">github.com/amadou38</a></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> · Amadou Diallo</p>
+    </footer>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
