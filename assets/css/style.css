@@ -367,3 +367,49 @@ html.dark .t1, html.dark .t2, html.dark .t3, html.dark .t4, html.dark .t5, html.
 .steps::before { background: var(--line); opacity: 1; }
 .progress-bar { background: var(--text); }
 .side-profile .eyebrow, .kicker, .nav-title, .sub-label { color: var(--muted); }
+
+/* =========================================================
+   Blue-gradient accents across the site (colours only)
+   ========================================================= */
+:root {
+  --blue: #2563eb;
+  --blue-ink: #1d4ed8;
+  --olive: #2563eb;
+  --olive-dark: #1d4ed8;
+  --gold: #38bdf8;
+  --grad: linear-gradient(95deg, #38bdf8 0%, #2563eb 55%, #1e3a8a 100%);
+  --accent-soft: rgba(37, 99, 235, .12);
+  --on-accent: #ffffff;
+  --orb1: #bfdbfe; --orb2: #c7d2fe; --orb3: #e0f2fe; --orb-op: .55;
+}
+html.dark {
+  --blue: #60a5fa;
+  --blue-ink: #93c5fd;
+  --olive: #60a5fa;
+  --olive-dark: #93c5fd;
+  --gold: #7dd3fc;
+  --grad: linear-gradient(95deg, #38bdf8 0%, #3b82f6 55%, #6366f1 100%);
+  --accent-soft: rgba(96, 165, 250, .16);
+  --on-accent: #ffffff;
+  --orb1: #1e3a8a; --orb2: #312e81; --orb3: #0c4a6e; --orb-op: .35;
+}
+.btn.grad { color: #fff; box-shadow: 0 8px 22px rgba(37,99,235,.28); }
+.btn.grad:hover { box-shadow: 0 12px 28px rgba(37,99,235,.38); }
+.soc:hover, .chip:hover { background: var(--grad); color: #fff; border-color: transparent; }
+.top-nav a.active, .tab-link.active, .sec-num { background: var(--accent-soft); color: var(--blue-ink); }
+.num, html.dark .num, .num.n2, .num.n3, .num.n4, .num.n5, .num.n6,
+.pub .meta, html.dark .pub .meta { background: var(--accent-soft); color: var(--blue-ink); }
+.t1, html.dark .t1 { color: #0ea5e9; } .t2, html.dark .t2 { color: #3b82f6; } .t3, html.dark .t3 { color: #2563eb; }
+.t4, html.dark .t4 { color: #4f46e5; } .t5, html.dark .t5 { color: #6366f1; } .t6, html.dark .t6 { color: #1e40af; }
+html.dark .t1 { color: #7dd3fc; } html.dark .t2 { color: #93c5fd; } html.dark .t3 { color: #60a5fa; }
+html.dark .t4 { color: #a5b4fc; } html.dark .t5 { color: #818cf8; } html.dark .t6 { color: #bfdbfe; }
+.steps::before { background: var(--grad); opacity: .5; }
+.progress-bar { background: var(--grad); }
+.side-profile .eyebrow, .kicker, .nav-title, .sub-label { color: var(--blue); }
+.sp { color: var(--blue); }
+ul.clean li::before { background: var(--grad); }
+.contact-card span, a { color: var(--blue-ink); }
+.top-nav a, .side-nav a, .tab-link, .top-btn, .top-icon, .soc { color: var(--muted); }
+.top-nav a.active { color: var(--blue-ink); }
+.pub a.pub-title { color: var(--text); }
+.pub a.pub-title:hover { color: var(--blue-ink); }
