@@ -221,3 +221,10 @@ footer p { margin: 4px 0; }
 /* About placed first, above the hero */
 #about { margin: 24px 0 0; }
 section.hero { min-height: auto; padding: 0 0 20px; margin: 48px 0 0; }
+
+/* photo */
+img.avatar { object-fit: cover; padding: 0; }
+.portrait {
+  display: block; width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 22px;
+  border: 4px solid var(--card); box-shadow: 0 0 0 3px var(--accent-2), 0 12px 30px var(--shadow);
+}
