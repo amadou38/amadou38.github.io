@@ -281,3 +281,18 @@ html.dark .pub .meta { background: rgba(227,184,75,.18); color: #e8c46a; }
   .main { padding-top: 10px; }
 }
 @media (max-width: 420px) { .top-btn { padding: 0 10px; } .top-btn .sp { display: none; } }
+
+/* section links as one line in the top bar */
+.top-nav { gap: 2px; overflow-x: auto; scrollbar-width: none; }
+.top-nav::-webkit-scrollbar { display: none; }
+.top-nav a { padding: 7px 13px; border-radius: 13px; font-weight: 500; font-size: .93rem; color: var(--muted); white-space: nowrap; transition: background .2s, color .2s; }
+.top-nav a:hover { color: var(--text); text-decoration: none; background: var(--chip-bg); }
+.top-nav a.active { background: rgba(111,125,53,.18); color: var(--olive-dark); }
+.sidebar { justify-content: flex-start; }
+@media (max-width: 1240px) { .top-btn .sp { display: none; } .top-btn { padding: 0 12px; } .top-nav a { padding: 7px 9px; font-size: .88rem; } }
+@media (max-width: 960px) {
+  .topbar { flex-wrap: wrap; height: auto; padding: 8px 10px; gap: 8px; }
+  .panel-group:first-child { display: flex; }
+  .top-nav { order: 2; width: 100%; }
+  .top-right { margin-left: auto; }
+}
