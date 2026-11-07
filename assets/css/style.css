@@ -413,3 +413,7 @@ ul.clean li::before { background: var(--grad); }
 .top-nav a.active { color: var(--blue-ink); }
 .pub a.pub-title { color: var(--text); }
 .pub a.pub-title:hover { color: var(--blue-ink); }
+
+/* About placed first, above the hero */
+#about { margin-top: 0; }
+.hero { padding-top: 10px; }
