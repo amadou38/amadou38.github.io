@@ -296,3 +296,74 @@ html.dark .pub .meta { background: rgba(227,184,75,.18); color: #e8c46a; }
   .top-nav { order: 2; width: 100%; }
   .top-right { margin-left: auto; }
 }
+
+/* show "PhD Candidate" as written (no forced capitals) */
+.side-profile .eyebrow { text-transform: none; letter-spacing: .04em; font-size: .9rem; }
+
+/* =========================================================
+   Monochrome palette (black & white), same layout
+   ========================================================= */
+:root {
+  --bg: #f2f2f2;
+  --text: #1b1b1b;
+  --muted: #555555;
+  --faint: #8a8a8a;
+  --olive: #1b1b1b;
+  --olive-dark: #1b1b1b;
+  --gold: #1b1b1b;
+  --glass: rgba(255, 255, 255, 0.55);
+  --glass-strong: rgba(255, 255, 255, 0.78);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --shadow: 0 1px 1px rgba(0,0,0,.04), 0 12px 32px rgba(0,0,0,.08);
+  --grad: linear-gradient(95deg, #1b1b1b 0%, #3d3d3d 100%);
+  --chip-bg: rgba(0,0,0,.04);
+  --chip-border: rgba(0,0,0,.08);
+  --photo-border: #ffffff;
+  --line: rgba(0,0,0,.12);
+  --bd1: #ffffff; --bd2: #e2e2e2; --bd3: #f7f7f7; --bd4: #ededed; --bd5: #dcdcdc;
+  --orb1: #d6d6d6; --orb2: #c4c4c4; --orb3: #ffffff; --orb-op: .5;
+  --accent-soft: rgba(0,0,0,.08);
+  --on-accent: #ffffff;
+}
+html.dark {
+  --bg: #121212;
+  --text: #f2f2f2;
+  --muted: #b3b3b3;
+  --faint: #7f7f7f;
+  --olive: #f2f2f2;
+  --olive-dark: #f2f2f2;
+  --gold: #f2f2f2;
+  --glass: rgba(30, 30, 30, 0.6);
+  --glass-strong: rgba(44, 44, 44, 0.78);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 1px 1px rgba(0,0,0,.3), 0 12px 32px rgba(0,0,0,.45);
+  --grad: linear-gradient(95deg, #f2f2f2 0%, #cfcfcf 100%);
+  --chip-bg: rgba(255,255,255,.06);
+  --chip-border: rgba(255,255,255,.1);
+  --photo-border: #2a2a2a;
+  --line: rgba(255,255,255,.12);
+  --bd1: #262626; --bd2: #1a1a1a; --bd3: #181818; --bd4: #121212; --bd5: #0c0c0c;
+  --orb1: #3a3a3a; --orb2: #2a2a2a; --orb3: #333333; --orb-op: .4;
+  --accent-soft: rgba(255,255,255,.1);
+  --on-accent: #121212;
+}
+
+/* gradient headline words → solid ink with underline accent */
+.g1, .g2, html.dark .g2 {
+  background: none; -webkit-background-clip: initial; background-clip: initial;
+  color: var(--text); font-style: italic;
+  text-decoration: underline; text-decoration-thickness: 4px; text-underline-offset: 8px; text-decoration-color: var(--line);
+}
+
+/* buttons & accents */
+.btn.grad { color: var(--on-accent); box-shadow: 0 8px 22px rgba(0,0,0,.18); }
+.btn.grad:hover { box-shadow: 0 12px 28px rgba(0,0,0,.25); }
+.soc:hover, .chip:hover { background: var(--text); color: var(--on-accent); }
+.top-nav a.active, .tab-link.active, .sec-num { background: var(--accent-soft); color: var(--text); }
+.num, html.dark .num, .num.n2, .num.n3, .num.n4, .num.n5, .num.n6,
+.pub .meta, html.dark .pub .meta { background: var(--accent-soft); color: var(--text); }
+.t1, .t2, .t3, .t4, .t5, .t6,
+html.dark .t1, html.dark .t2, html.dark .t3, html.dark .t4, html.dark .t5, html.dark .t6 { color: var(--muted); }
+.steps::before { background: var(--line); opacity: 1; }
+.progress-bar { background: var(--text); }
+.side-profile .eyebrow, .kicker, .nav-title, .sub-label { color: var(--muted); }
