@@ -348,12 +348,12 @@ html.dark {
   --on-accent: #121212;
 }
 
-/* gradient headline words → solid ink with underline accent */
-.g1, .g2, html.dark .g2 {
-  background: none; -webkit-background-clip: initial; background-clip: initial;
-  color: var(--text); font-style: italic;
-  text-decoration: underline; text-decoration-thickness: 4px; text-underline-offset: 8px; text-decoration-color: var(--line);
-}
+/* gradient headline words — same style, monochrome colours */
+.g1, .g2 { font-style: normal; text-decoration: none; -webkit-background-clip: text; background-clip: text; color: transparent; }
+.g1 { background-image: linear-gradient(95deg, #8a8a8a 0%, #4a4a4a 100%); }
+.g2 { background-image: linear-gradient(95deg, #3a3a3a 0%, #000000 100%); }
+html.dark .g1 { background-image: linear-gradient(95deg, #9a9a9a 0%, #d9d9d9 100%); }
+html.dark .g2 { background-image: linear-gradient(95deg, #e6e6e6 0%, #ffffff 100%); }
 
 /* buttons & accents */
 .btn.grad { color: var(--on-accent); box-shadow: 0 8px 22px rgba(0,0,0,.18); }
