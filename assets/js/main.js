@@ -33,7 +33,7 @@
   talks.forEach(function (t) {
     var el = document.createElement('div');
     el.className = 'card';
-    el.innerHTML = '<h3>🎤 ' + t.title + '</h3><div class="meta">' + t.meta + '</div>';
+    el.innerHTML = '<h3>' + t.title + '</h3><div class="meta">' + t.meta + '</div>';
     talksMount.appendChild(el);
   });
 
@@ -41,7 +41,7 @@
 
   // ---- Theme toggle ----
   var html = document.documentElement, themeBtn = document.getElementById('theme-btn');
-  function syncIcon() { themeBtn.textContent = html.classList.contains('light') ? '🌙' : '☀️'; }
+  function syncIcon() { themeBtn.textContent = html.classList.contains('light') ? '☾' : '☀'; }
   themeBtn.addEventListener('click', function () {
     html.classList.toggle('light');
     try { localStorage.setItem('theme', html.classList.contains('light') ? 'light' : 'dark'); } catch (e) {}
@@ -85,4 +85,13 @@
     entries.forEach(function (e) { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
   document.querySelectorAll('section').forEach(function (s) { obs.observe(s); });
+})();
+
+// Headline: reveal word by word
+(function () {
+  var t = document.querySelector('.hero .title');
+  if (!t || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  t.innerHTML = t.textContent.trim().split(/\s+/).map(function (w, i) {
+    return '<span class="w" style="animation-delay:' + (0.08 * i).toFixed(2) + 's">' + w + '</span>';
+  }).join(' ');
 })();
