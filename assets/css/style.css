@@ -417,3 +417,16 @@ ul.clean li::before { background: var(--grad); }
 /* About placed first, above the hero */
 #about { margin-top: 0; }
 .hero { padding-top: 10px; }
+
+/* Affiliations / Focus Areas as a right-hand column */
+.about-grid .lead + .lead { margin-top: -6px; }
+@media (min-width: 1500px) {
+  .main { margin-right: 316px; }
+  .about-grid { grid-template-columns: 1fr; }
+  .rail {
+    position: fixed; z-index: 40; right: 16px; width: 284px;
+    top: calc(16px + var(--top-h) + 16px);
+    max-height: calc(100vh - var(--top-h) - 64px); overflow-y: auto;
+  }
+  .rail:hover { transform: none; }
+}
