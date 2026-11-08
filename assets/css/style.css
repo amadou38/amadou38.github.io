@@ -430,3 +430,13 @@ ul.clean li::before { background: var(--grad); }
   }
   .rail:hover { transform: none; }
 }
+
+/* Profile box: compact card under the top bar, mirroring the right-hand column */
+@media (min-width: 961px) {
+  .topbar { left: 16px; }
+  .sidebar {
+    top: calc(16px + var(--top-h) + 16px); bottom: auto;
+    max-height: calc(100vh - var(--top-h) - 64px);
+    border-radius: var(--radius); padding: 24px 22px;
+  }
+}
